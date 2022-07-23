@@ -4,8 +4,17 @@ r c m
 1 1
 2 2
 
+for mines O(m):
+    O(3^2) -> O(1) ?
+    i-1 -> i+1
+        j-1 -> j+1
+
+populate fiels O(r*c)
+
+T: O(r*c)+O(m)
+
 if map.has(mine_pos) {
-    // remove as 
+    // remove map and replace with '*'
 } 
 
 if !map.has(mine_pos) {
@@ -14,10 +23,11 @@ if !map.has(mine_pos) {
     // and we append to the list 
 }
 
-map<empty_pos, mine_pos>
+map<empty_pos, mine_pos> O(r * c) + O(m^2) {could be O(1)}
 
 @i=0 (1 1)
 (1 1): |*|
+(0,1): out_of_bounds x
 (1 2): |(1 1)|
 (2 1): |(1 1)|
 (2 2): |(1 1)|
