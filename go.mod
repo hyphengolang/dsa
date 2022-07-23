@@ -1,4 +1,4 @@
-module com.topheruk.dsa
+module com.adoublef.dsa
 
 go 1.18
 
